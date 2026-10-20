@@ -1,0 +1,1 @@
+Tu kiedyś będą testy ale ich nie ma bo nikomu się nie chciało ich zrobić
