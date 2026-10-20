@@ -79,7 +79,7 @@ function mapa() {
   }
   console.log("Mapa do uzupelnienia");
 }
-function rozejrzyj(pokoj) {
+function rozejrzyj() {
   // TODO A4: switch(pokoj); opis zgodny ze stanem przedmiotow.
   switch (pokoj){
     case 1:
@@ -89,6 +89,7 @@ function rozejrzyj(pokoj) {
       else{
         console.log("Rozglądasz sie po recepcji. Na ladzie ciemny monitor, kawa i kilka papierów.");
       }
+      break;
     case 2:
       if(bezpiecznik==false && zasilanie==false){
         console.log("Magazyn jak magazyn, przechowuje graty, pajęczyny i... bezpiecznik!");
@@ -102,6 +103,7 @@ function rozejrzyj(pokoj) {
       else{
         console.log("Mieć ciastko i zjeść ciastko?? Coś tu nie gra.");
       }
+      break;
     case 3:
       if(zasilanie==true){
         console.log("Serwerownia. Kable, kable i więcej kabli. Przynajmniej włączyłeś zasilanie.");
@@ -109,6 +111,7 @@ function rozejrzyj(pokoj) {
       else{
         console.log("Serwerownia. Kable, kable i więcej kabli. Na ścianie wisi skrzynka, wygląda jakby coś tam brakowało.");
       }
+      break;
     case 4:
       if(zasilanie==true && karta==true){
         console.log("Nareszcie, zasilanie włączone, karta w kieszeni. Przed wolnością stoją tylko te drzwi.");
@@ -125,8 +128,9 @@ function rozejrzyj(pokoj) {
       else{
         console.log("Coś tu nie gra");
       }
+      break;
     default:
-      return "Nieznane pomieszczenie"
+      return "Nieznane pomieszczenie";
   }
 }
 
